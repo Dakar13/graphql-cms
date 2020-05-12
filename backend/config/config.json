@@ -1,0 +1,14 @@
+{
+    "serverPort": 5000,
+    "db": {
+        "host": "localhost",
+        "dialect": "mysql",
+        "database": "cms_prueba",
+        "username": "root",
+        "password": "sasha"
+    },
+    "security": {
+        "secretKey": "some-secret-key",
+        "expiresIn": "2d"
+    }
+}
