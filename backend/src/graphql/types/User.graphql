@@ -1,0 +1,25 @@
+type User {
+    id: UUID!
+    username: String!
+    password: String!
+    email: String!
+    privilege: String!
+    active: Boolean!
+    createdAt: Datatime!
+    updatedAt: Datatime!
+    posts: [Post!]
+}
+
+type Query {
+    getUsers: [User!]
+}
+
+type Mutation {
+    addUser(input: AddUserInput): User!
+}
+
+input AddUserInput {
+    username: String!,
+    password: String!,
+    email: String!
+}
