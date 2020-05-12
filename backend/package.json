@@ -1,0 +1,29 @@
+{
+  "name": "graphql-cms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js --ext js --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dakar13/graphql-cms.git"
+  },
+  "author": "Eloi Calva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dakar13/graphql-cms/issues"
+  },
+  "homepage": "https://github.com/Dakar13/graphql-cms#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "apollo-server": "^2.13.1",
+    "graphql": "^15.0.0"
+  }
+}
