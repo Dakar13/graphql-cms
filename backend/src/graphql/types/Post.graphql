@@ -8,8 +8,8 @@ type Post {
     language: String!
     image: String!
     published: Boolean!
-    createdAt: DataTime!
-    updatedAt: DataTime!
+    createdAt: Datatime!
+    updatedAt: Datatime!
     tags: [Tag!]
 }
 

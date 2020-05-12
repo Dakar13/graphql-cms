@@ -5,26 +5,8 @@ import { ApolloServer, makeExecutableSchema } from 'apollo-server';
 import models from './models'
 
 // Type Definitions
-const typeDefs = `
-    type Hello {
-        message: String!
-    }
-
-    type Query {
-        sayHello(name: String!): Hello
-    }
-`;
-
-// Resolvers
-const resolvers = {
-	Query : {
-		sayHello : (_, args) => {
-			return {
-				message : `Hello ${args.name || 'world'}`
-			};
-		}
-	}
-};
+import resolvers from "./graphql/resolvers";
+import typeDefs from "./graphql/types";
 
 // Schema
 const schema = makeExecutableSchema({
@@ -42,7 +24,7 @@ const apolloServer = new ApolloServer({
 
 // Running Apollo Server
 const alter = true
-const force = false
+const force = true
 models.sequelize.sync({ alter, force }).then(() => {
     apolloServer.listen(5000).then(({ url }) => console.log(`Running on ${url}`))
 }) /** Recomendacion, una vez que ya se cuente con registros, elimine { force: true }, de lo contrario perdera lo ya almacenado en las tablas */
