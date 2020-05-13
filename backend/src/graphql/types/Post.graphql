@@ -22,9 +22,9 @@ type Mutation {
 }
 
 input AddPostInput {
+    userId: UUID!,
     title: String!,
     slug: String!,
-    body: String!,
-    userId: UUID!,
+    body: String!
     tags: [TagsInput]
 }

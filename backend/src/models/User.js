@@ -57,7 +57,7 @@ export default (sequelize, { BOOLEAN, STRING, UUID, UUIDV4 }) => {
 
     User.associate = models => {
         User.hasMany(models.Post, {
-            foreingnKey: {
+            foreignKey: {
                 name: 'userId',
                 field: 'user_id'
             },

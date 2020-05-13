@@ -9,6 +9,7 @@ export default {
             })
         }
     },
+    
     Mutation: {
         addPost: (parent, { input }, { models }) => {
             return models.Post.create({ ...input }, {
