@@ -9,17 +9,16 @@ export const isNumber = variable => typeof variable === 'number'
 export const isFunction = variable => typeof variable === 'function'
 
 export const isJson = str => {
-	if (!str || str === null) {
-	return false
-}
-try {
-	JSON.parse(str)
-} catch (e) {
-	return false
-}
+  if (!str || str === null) {
+    return false
+  }
+  try {
+    JSON.parse(str)
+  } catch (e) {
+    return false
+  }
 
-return true
-
+  return true
 }
 
 export const isObject = variable => isDefined(variable) && typeof variable === 'object' && !Array.isArray(variable)
