@@ -24,7 +24,7 @@ const apolloServer = new ApolloServer({
 
 // Running Apollo Server
 const alter = true
-const force = true
+const force = false
 models.sequelize.sync({ alter, force }).then(() => {
     apolloServer.listen(5000).then(({ url }) => console.log(`Running on ${url}`))
 }) /** Recomendacion, una vez que ya se cuente con registros, elimine { force: true }, de lo contrario perdera lo ya almacenado en las tablas */
