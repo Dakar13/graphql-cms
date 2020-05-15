@@ -1,0 +1,19 @@
+{
+  "baseUrl": "http://www.mi.dominio",
+  "api": {
+    "uri": "http://www.mi.dominio/graphql",
+    "credentials": "same-origin"
+  },
+  "debug": false,
+  "cache": {
+    "enable": true,
+    "whitelist": []
+  },
+  "session": {
+    "cookieDomain": "www.mi.dominio",
+    "maxAge": 172800,
+    "cookiePrefix": "",
+    "path": "/",
+    "httpOnly": true
+  }
+}
