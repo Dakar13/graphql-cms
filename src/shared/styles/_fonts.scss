@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'OpenSans';
-    src: url('/frontend/public/assets/fonts/OpenSans/font.woff2') format('woff2'), url('/frontend/public/assets/fonts/OpenSans/font.woff') format('woff');
+    src: url('/public/assets/fonts/OpenSans/font.woff2') format('woff2'), url('/public/assets/fonts/OpenSans/font.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
-  
+
   @font-face {
     font-family: 'Poppins';
-    src: url('/frontend/public/assets/fonts/Poppins/font.woff2') format('woff2'), url('/frontend/public/assets/fonts/Poppins/font.woff') format('woff');
+    src: url('/public/assets/fonts/Poppins/font.woff2') format('woff2'), url('/public/assets/fonts/Poppins/font.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }

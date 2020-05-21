@@ -3,5 +3,10 @@
   "languages": {
     "default": "es",
     "list": ["es", "en"]
-  }
+  },
+    "security": {
+        "secretKey": "Gr49hQ1Cm5",
+        "expiresIn": "2d"
+    }
 }
+
